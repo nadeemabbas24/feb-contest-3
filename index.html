@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Contact</a>         
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!-- main contents -->
+    <div class="container mx-sm-5">
+    <h1>Bootstrap Example</h1>
+        <!-- Carousel -->
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/500/200" class="d-block w-100" alt="image file">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/4/500/200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/25/500/200" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div col-sm-12>
+        <h2>Some Content</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores fugit,
+         iusto at quidem quisquam consequatur nam odio dolor doloremque eaque temporibus 
+         vitae nulla suscipit dignissimos similique consectetur ullam commodi.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores fugit,
+         iusto at quidem quisquam consequatur nam odio dolor doloremque eaque temporibus 
+         vitae nulla suscipit dignissimos similique consectetur ullam commodi.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores fugit,
+            iusto at quidem quisquam consequatur nam odio dolor doloremque eaque temporibus 
+            vitae nulla suscipit dignissimos similique consectetur ullam commodi.
+            </p>
+        </div>
+ <!-- cards display -->
+ <div class="row justify-content-between gx-2 my-sm-4 my-2 flex-lg-nowrap ">
+ 
+ <div class="card col-sm-4 p-0 m-1" >
+    <img src="https://picsum.photos/290/200" class="card-img-top" alt="card image">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+
+  <div class="card col-sm-4 p-0 m-1" >
+    <img src="https://picsum.photos/id/25/290/200" class="card-img-top" alt="card image">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some  quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card col-sm-4 p-0 m-1" >
+    <img src="https://picsum.photos/id/62/290/200" class="card-img-top" alt="card image">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+</div>
+<!-- form -->
+
+<form class="my-sm-4 my-2">
+    <h2>Form</h2>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter your name">
+  </div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your mail address">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message" rows="3"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">submit</button>
+</form>
+
+<!-- table -->
+<h2 class="my-sm-2">Table</h2>
+<table class="table" style="border-top:1px solid lightgrey;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Ottomark@gmail.com</td>
+        <td> Lorem ipsa velit quasi expedita corrupti magnam corporis.</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton@gmail.com</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>Larrybird@gmail.com</td>
+        <td>Impedit modi omnis, assumenda tempora praesentium esse odio voluptas minus.</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
